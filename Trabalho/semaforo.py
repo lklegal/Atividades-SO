@@ -53,8 +53,8 @@ def operacoes(fila:Fila):
         elementos = fila.mostrar()
         fim = time.time()
         tempo = fim-inicio
-        print(threading.current_thread().name + ": tira " + str(removido) + ", poe " + str(adicionado) + ", fila: " + elementos)
-        print("Taxa instantanea de " + str(int(1/tempo)) + " insercoes por segundo.")
+        print(threading.current_thread().name + ": Libera recursos para o processo " + str(removido) + ", poe o processo " + str(adicionado) + " na fila. Fila de processos: " + elementos)
+        print("Taxa instantanea de " + str(int(1/tempo)) + " processos liberados por segundo.")
 
 if __name__ == "__main__":
     comando = -1
